@@ -4,9 +4,10 @@ class SortedList {
     this.length =0;
   }
 
-  // 
+  // should add a single value to SortedList
   add(item) {
     this.items.push(item);
+    this.length++
     return this.items.sort((a,b) => a - b)
   }
 
@@ -43,6 +44,7 @@ class SortedList {
    }
   }
 
+  // should return the average of elements in the list. Pendiente rectificar
   avg() {
     let sum = this.sum()
     if (this.items.length === 0) {
